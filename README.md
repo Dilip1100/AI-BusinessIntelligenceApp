@@ -1,24 +1,29 @@
-# Enterprise AI Business Intelligence Website v2
+# Enterprise AI Business Intelligence Website
 
-Updated Enterprise Edition with AI Forecasting added under AI Copilot Features.
+## Highlights
+- Enterprise-grade SaaS landing page
+- GitHub Pages ready
+- Responsive design
+- Product suite with Medical Demo and Automotive Retail Demo
+- Dashboard screenshots from deployed apps
+- Lead capture form
+- Mailto fallback
+- Easy Formspree/EmailJS integration
 
-## Added in this version
-- AI Forecasting Explanation section
-- New screenshot: AI-Forecasting-Feature.jpg
-- AI Copilot section now includes:
-  - Conversational Analytics
-  - AI Executive Summary & Copilot
-  - AI Forecasting Explanation
-- Updated model messaging for Groq, Llama and GPT OSS support
-- Updated showcase gallery
+## GitHub Pages
+1. Create repository
+2. Upload files
+3. Settings -> Pages
+4. Deploy from Branch -> main -> root
 
-## Deployment
-1. Upload all files to a GitHub repository.
-2. Go to Settings > Pages.
-3. Select Deploy from Branch.
-4. Choose main branch and root folder.
-5. Save.
+## Production Upgrade Ideas
+- React + Vite
+- Framer Motion animations
+- SEO metadata
+- Blog
+- Case studies
+- CRM integration
 
-## Enquiry Form
-The form uses mailto by default. To use Formspree, add your endpoint in script.js:
-const FORMSPREE_ENDPOINT = "https://formspree.io/f/yourFormId";
+## Included Demo Products
+- Medical Demo Analytics: https://medical-demo-bv3.pages.dev
+- Automotive Retail Analytics: https://automotive-retail-dashboard.pages.dev
