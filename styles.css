@@ -71,6 +71,11 @@ footer {
   text-decoration: none;
 }
 
+.nav-links a.active {
+  color: var(--text);
+  font-weight: 800;
+}
+
 .nav-btn,
 .btn {
   border: 1px solid var(--line-strong);
@@ -324,6 +329,78 @@ figcaption {
   font-weight: 700;
 }
 
+.ai-stack {
+  border-top: 1px solid var(--line);
+}
+
+.llm-grid,
+.ai-principles {
+  display: grid;
+  gap: 18px;
+}
+
+.llm-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.llm-card {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  gap: 18px;
+  align-items: start;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 22px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
+}
+
+.llm-card img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 12px;
+  background: #fbfbfb;
+}
+
+.llm-card h3 {
+  margin: 0 0 8px;
+  font-size: 21px;
+}
+
+.llm-card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.ai-principles {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 18px;
+}
+
+.ai-principles div {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #ffffff;
+  padding: 18px;
+}
+
+.ai-principles strong,
+.ai-principles span {
+  display: block;
+}
+
+.ai-principles strong {
+  margin-bottom: 6px;
+}
+
+.ai-principles span {
+  color: var(--muted);
+  font-size: 14px;
+}
+
 .gallery {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -422,6 +499,11 @@ footer p {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .llm-grid,
+  .ai-principles {
+    grid-template-columns: 1fr;
+  }
+
   .product-card.featured {
     grid-column: span 2;
   }
@@ -447,8 +529,20 @@ footer p {
   }
 
   .product-grid,
-  .gallery {
+  .gallery,
+  .llm-grid,
+  .ai-principles {
     grid-template-columns: 1fr;
+  }
+
+  .llm-card {
+    grid-template-columns: 48px 1fr;
+  }
+
+  .llm-card img {
+    width: 48px;
+    height: 48px;
+    padding: 9px;
   }
 
   .product-card.featured {
