@@ -1,151 +1,227 @@
-// Mobile Navigation
-const toggle = document.querySelector(".mobile-toggle");
-const nav = document.querySelector(".nav");
+// =====================================================
+// Enterprise AI BI Website
+// script.js
+// =====================================================
 
-if (toggle && nav) {
-  toggle.addEventListener("click", () => {
-    nav.classList.toggle("open");
-  });
-}
+document.addEventListener("DOMContentLoaded", () => {
 
-// Reveal Animations
-const revealItems = document.querySelectorAll(".reveal");
+    // ==========================================
+    // Mobile Navigation
+    // ==========================================
 
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-      }
-    });
-  },
-  {
-    threshold: 0.12,
-  }
-);
+    const mobileToggle = document.querySelector(".mobile-toggle");
+    const nav = document.querySelector(".nav");
 
-revealItems.forEach((item) => observer.observe(item));
-
-// ====================================
-// ENQUIRY FORM CONFIGURATION
-// ====================================
-
-// Option 1: Formspree
-// Example:
-// const FORMSPREE_ENDPOINT = "https://formspree.io/f/xxxxxxxx";
-
-const FORMSPREE_ENDPOINT = "";
-
-// ====================================
-// FORM SUBMISSION
-// ====================================
-
-const enquiryForm = document.getElementById("enquiryForm");
-
-if (enquiryForm) {
-  enquiryForm.addEventListener("submit", async (event) => {
-    event.preventDefault();
-
-    const payload = {
-      name: document.getElementById("name")?.value.trim() || "",
-      email: document.getElementById("email")?.value.trim() || "",
-      phone: document.getElementById("phone")?.value.trim() || "",
-      requirement:
-        document.getElementById("requirement")?.value.trim() || "",
-    };
-
-    // Formspree Integration
-    if (FORMSPREE_ENDPOINT) {
-      try {
-        const response = await fetch(FORMSPREE_ENDPOINT, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Accept: "application/json",
-          },
-          body: JSON.stringify(payload),
+    if (mobileToggle && nav) {
+        mobileToggle.addEventListener("click", () => {
+            nav.classList.toggle("active");
         });
-
-        if (response.ok) {
-          alert(
-            "Thank you. Your enquiry has been submitted successfully."
-          );
-
-          enquiryForm.reset();
-          return;
-        }
-      } catch (error) {
-        console.warn(
-          "Formspree submission failed. Using mailto fallback.",
-          error
-        );
-      }
     }
 
-    // Mailto Fallback
-    const subject = encodeURIComponent(
-      "Enterprise BI Demo Request"
+    // ==========================================
+    // Smooth Scroll
+    // ==========================================
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+
+            const targetId = this.getAttribute("href");
+
+            if (targetId === "#") return;
+
+            const target = document.querySelector(targetId);
+
+            if (target) {
+                e.preventDefault();
+
+                target.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                });
+
+                nav?.classList.remove("active");
+            }
+        });
+    });
+
+    // ==========================================
+    // Scroll Reveal
+    // ==========================================
+
+    const revealElements = document.querySelectorAll(".reveal");
+
+    const revealObserver = new IntersectionObserver(
+        (entries) => {
+            entries.forEach(entry => {
+
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("revealed");
+                }
+
+            });
+        },
+        {
+            threshold: 0.15
+        }
     );
 
-    const body = encodeURIComponent(
-`Name: ${payload.name}
+    revealElements.forEach(el => {
+        revealObserver.observe(el);
+    });
 
-Email: ${payload.email}
+    // ==========================================
+    // Sticky Header
+    // ==========================================
 
-Phone: ${payload.phone}
+    const header = document.querySelector(".site-header");
+
+    window.addEventListener("scroll", () => {
+
+        if (!header) return;
+
+        if (window.scrollY > 30) {
+            header.classList.add("scrolled");
+        } else {
+            header.classList.remove("scrolled");
+        }
+
+    });
+
+    // ==========================================
+    // Enquiry Form
+    // ==========================================
+
+    const form = document.getElementById("enquiryForm");
+
+    if (form) {
+
+        form.addEventListener("submit", function (e) {
+
+            e.preventDefault();
+
+            const name =
+                document.getElementById("name")?.value || "";
+
+            const email =
+                document.getElementById("email")?.value || "";
+
+            const phone =
+                document.getElementById("phone")?.value || "";
+
+            const requirement =
+                document.getElementById("requirement")?.value || "";
+
+            const body = `
+Name: ${name}
+
+Email: ${email}
+
+Phone: ${phone}
 
 Requirement:
-${payload.requirement}`
-    );
 
-    window.location.href =
-      `mailto:dilip1100@gmail.com?subject=${subject}&body=${body}`;
-  });
-}
+${requirement}
+`;
 
-// ====================================
-// SMOOTH SCROLL FOR ANCHOR LINKS
-// ====================================
+            const mailtoLink =
+                `mailto:dilip1100@gmail.com` +
+                `?subject=${encodeURIComponent("Enterprise BI Demo Request")}` +
+                `&body=${encodeURIComponent(body)}`;
 
-document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-  anchor.addEventListener("click", function (e) {
-    const targetId = this.getAttribute("href");
+            window.location.href = mailtoLink;
 
-    if (targetId && targetId !== "#") {
-      const target = document.querySelector(targetId);
+            form.reset();
 
-      if (target) {
-        e.preventDefault();
-
-        target.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
         });
 
-        nav?.classList.remove("open");
-      }
     }
-  });
+
+    // ==========================================
+    // CTA Tracking (Optional)
+    // ==========================================
+
+    document.querySelectorAll(".button").forEach(btn => {
+
+        btn.addEventListener("click", () => {
+
+            console.log(
+                "CTA Clicked:",
+                btn.textContent.trim()
+            );
+
+        });
+
+    });
+
+    // ==========================================
+    // Image Hover Enhancement
+    // ==========================================
+
+    const cards = document.querySelectorAll(
+        ".solution-card, .image-card, .feature-card"
+    );
+
+    cards.forEach(card => {
+
+        card.addEventListener("mouseenter", () => {
+            card.classList.add("hovered");
+        });
+
+        card.addEventListener("mouseleave", () => {
+            card.classList.remove("hovered");
+        });
+
+    });
+
+    // ==========================================
+    // Current Year Footer
+    // ==========================================
+
+    const yearElement =
+        document.getElementById("currentYear");
+
+    if (yearElement) {
+        yearElement.textContent =
+            new Date().getFullYear();
+    }
+
 });
 
-// ====================================
-// SIMPLE HOVER ENHANCEMENT
-// ====================================
+// =====================================================
+// Optional Formspree Integration
+// =====================================================
+//
+// Replace submit handler above with:
+//
+// fetch("YOUR_FORMSPREE_ENDPOINT", {
+//     method: "POST",
+//     headers: {
+//         "Content-Type": "application/json"
+//     },
+//     body: JSON.stringify({
+//         name,
+//         email,
+//         phone,
+//         requirement
+//     })
+// })
+//
+// =====================================================
 
-document
-  .querySelectorAll(
-    ".feature-card, .solution-card, .model-card, .image-card"
-  )
-  .forEach((card) => {
-    card.addEventListener("mouseenter", () => {
-      card.style.transform = "translateY(-4px)";
-    });
-
-    card.addEventListener("mouseleave", () => {
-      card.style.transform = "";
-    });
-  });
-
-console.log(
-  "Enterprise AI Business Intelligence Website Loaded Successfully"
-);
+// =====================================================
+// Optional EmailJS Integration
+// =====================================================
+//
+// emailjs.send(
+//     "SERVICE_ID",
+//     "TEMPLATE_ID",
+//     {
+//         name,
+//         email,
+//         phone,
+//         requirement
+//     },
+//     "PUBLIC_KEY"
+// );
+//
+// =====================================================
