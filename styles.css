@@ -76,11 +76,6 @@ a {
   display: none;
 }
 
-.top-contact-inner span {
-  flex: 0 0 auto;
-  color: #e5e7eb;
-}
-
 .top-contact-inner a {
   color: #ffffff;
   text-decoration: none;
@@ -89,6 +84,49 @@ a {
 
 .top-contact-inner a:hover {
   text-decoration: underline;
+}
+
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.contact-icon {
+  width: 18px;
+  height: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+}
+
+.contact-icon svg {
+  width: 18px;
+  height: 18px;
+  display: block;
+  fill: #ffffff;
+}
+
+.contact-link.icon-only {
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  gap: 0;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.contact-link.icon-only:hover {
+  background: rgba(255, 255, 255, 0.16);
+  transform: translateY(-1px);
+  text-decoration: none;
 }
 
 /* Header */
@@ -841,6 +879,17 @@ textarea {
     padding: 6px 5%;
     font-size: 12px;
     gap: 12px;
+  }
+
+  .contact-icon,
+  .contact-icon svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .contact-link.icon-only {
+    width: 28px;
+    height: 28px;
   }
 
   .site-header {
