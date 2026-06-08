@@ -1007,11 +1007,6 @@ textarea {
   .brief-card {
     padding: 20px;
   }
-
-  .nav {
-    gap: 8px;
-    font-size: 12px;
-  }
 }
 
 /* Permanently hide hamburger/mobile menu button */
