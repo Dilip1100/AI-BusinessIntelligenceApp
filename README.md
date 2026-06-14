@@ -7,6 +7,7 @@ Production-ready static website for the AI Business Intelligence consulting/demo
 - “Why opt for this AI Framework” section
 - Visual SVG illustration for every positioning point
 - Business / Steel Intelligence demo
+- Real Estate Revenue Intelligence demo
 - Medical Analytics demo
 - Automotive Retail Analytics demo
 - AI Copilot and Forecasting showcase
@@ -72,6 +73,7 @@ framework-management.svg
 ## Live Demo Links
 
 - Business / Steel Demo: https://steel-industry-dashboard.pages.dev/
+- Real Estate Demo: https://real-estate-dashboard-7ji.pages.dev/
 - Medical Demo: https://medical-demo-bv3.pages.dev/
 - Automotive Retail Demo: https://automotive-retail-dashboard.pages.dev/
 
@@ -99,3 +101,16 @@ To use Formspree, open `script.js` and set:
 ```js
 const FORMSPREE_ENDPOINT = "https://formspree.io/f/yourFormId";
 ```
+
+
+## Real Estate Demo Assets
+
+```text
+real-estate-dashboard-overview.jpg
+real-estate-dashboard-forecast.jpg
+real-estate-dashboard-ai-analyst.jpg
+```
+
+## Real Estate Demo Summary
+
+Adds a Cloudflare-hosted Real Estate Revenue Intelligence demo covering project inventory, buyer leads, payment plans, sales funnel, collections, overdue risk, handover readiness, six-month forecast planning and Groq-powered aggregate AI analysis.
