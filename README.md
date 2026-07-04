@@ -4,14 +4,14 @@ Production-ready static website for the AI Business Intelligence consulting/demo
 
 ## New in this version
 
-- “Why opt for this AI Framework” section
+- “Why choose this AI BI framework” section
 - Visual SVG illustration for every positioning point
 - Business / Steel Intelligence demo
 - Real Estate Revenue Intelligence demo
 - Medical Analytics demo
 - Automotive Retail Analytics demo
 - AI Copilot and Forecasting showcase
-- Groq, Llama and GPT OSS model positioning
+- Qwen 3 32B and GPT OSS model positioning
 - Client-to-client and industry-to-industry customisation messaging
 
 ## Required Files
@@ -50,8 +50,8 @@ automotive-retail-demo-screenshot.png
 AI icons:
 
 ```text
-groq-icon.svg
-llama-icon.svg
+qwen-icon.svg
+qwen-reasoning-icon.svg
 gpt-oss-icon.svg
 ```
 
@@ -113,4 +113,4 @@ real-estate-dashboard-ai-analyst.jpg
 
 ## Real Estate Demo Summary
 
-Adds a Cloudflare-hosted Real Estate Revenue Intelligence demo covering project inventory, buyer leads, payment plans, sales funnel, collections, overdue risk, handover readiness, six-month forecast planning and Groq-powered aggregate AI analysis.
+Adds a Cloudflare-hosted Real Estate Revenue Intelligence demo covering project inventory, buyer leads, payment plans, sales funnel, collections, overdue risk, handover readiness, six-month forecast planning and Qwen 3 32B-powered aggregate AI analysis.
