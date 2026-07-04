@@ -1,12 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 340">
-<rect width="520" height="340" rx="30" fill="#ffffff"/><rect x="1" y="1" width="518" height="338" rx="29" fill="none" stroke="#dce2ea"/>
-<circle cx="78" cy="72" r="32" fill="#f3f5f8" stroke="#dce2ea"/><text x="78" y="83" text-anchor="middle" font-family="Arial" font-size="24" font-weight="800" fill="#111827">3</text>
-<text x="130" y="66" font-family="Arial" font-size="25" font-weight="800" fill="#141821">BI Platform</text>
-<text x="130" y="94" font-family="Arial" font-size="14" fill="#667085">Insights, Risks &amp; Actions</text>
-<rect x="46" y="135" width="124" height="78" rx="18" fill="#f8fafc" stroke="#dce2ea"/><rect x="198" y="135" width="124" height="78" rx="18" fill="#f8fafc" stroke="#dce2ea"/><rect x="350" y="135" width="124" height="78" rx="18" fill="#f8fafc" stroke="#dce2ea"/>
-<path d="M170 174 H198 M322 174 H350" stroke="#111827" stroke-width="6" stroke-linecap="round"/>
-<circle cx="108" cy="174" r="22" fill="#111827"/><path d="M95 174 l9 9 18-22" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-<rect x="230" y="155" width="60" height="10" rx="5" fill="#111827"/><rect x="230" y="176" width="42" height="10" rx="5" fill="#a7ada5"/><rect x="385" y="150" width="54" height="48" rx="12" fill="#111827"/><circle cx="412" cy="174" r="12" fill="#fff"/>
-<path d="M78 272 C130 238, 178 266, 238 232 S350 286, 442 236" fill="none" stroke="#111827" stroke-width="8" stroke-linecap="round"/>
-<rect x="46" y="292" width="96" height="13" rx="7" fill="#111827"/><rect x="154" y="292" width="72" height="13" rx="7" fill="#a7ada5"/><rect x="238" y="292" width="118" height="13" rx="7" fill="#d5d8d2"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 340" role="img" aria-labelledby="title desc">
+<title id="title">BI Platform</title><desc id="desc">Insights, Risks &amp;amp; Actions</desc>
+<defs>
+  <linearGradient id="soft" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f8fafc"/><stop offset="1" stop-color="#eef2f7"/></linearGradient>
+  <linearGradient id="inkGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#111827"/><stop offset="1" stop-color="#344054"/></linearGradient>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#111827" flood-opacity="0.10"/></filter>
+</defs>
+<rect width="520" height="340" rx="30" fill="#ffffff"/>
+<rect x="1" y="1" width="518" height="338" rx="29" fill="none" stroke="#dce2ea"/>
+<circle cx="78" cy="72" r="32" fill="#f3f5f8" stroke="#dce2ea"/>
+<text x="78" y="83" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="800" fill="#111827">3</text>
+<text x="130" y="66" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="800" fill="#141821">BI Platform</text>
+<text x="130" y="94" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#667085">Insights, Risks &amp; Actions</text>
+
+<rect x="76" y="132" width="368" height="150" rx="20" fill="url(#soft)" stroke="#dce2ea" filter="url(#shadow)"/>
+<rect x="100" y="158" width="320" height="34" rx="12" fill="#111827"/>
+<circle cx="120" cy="175" r="5" fill="#fff" opacity=".8"/><circle cx="138" cy="175" r="5" fill="#fff" opacity=".6"/><circle cx="156" cy="175" r="5" fill="#fff" opacity=".4"/>
+<rect x="104" y="210" width="76" height="44" rx="10" fill="#fff" stroke="#cbd5e1"/><path d="M119 241v-18M141 241v-28M163 241v-12" stroke="#111827" stroke-width="6" stroke-linecap="round"/>
+<rect x="198" y="210" width="76" height="44" rx="10" fill="#fff" stroke="#cbd5e1"/><path d="M212 239l15-17 16 8 18-19" fill="none" stroke="#111827" stroke-width="4" stroke-linecap="round"/>
+<rect x="292" y="210" width="104" height="44" rx="10" fill="#fff" stroke="#cbd5e1"/><path d="M310 228h68M310 242h45" stroke="#111827" stroke-width="5" stroke-linecap="round"/>
+<path d="M395 132l29-25 27 25v30h-56z" fill="#fff" stroke="#111827" stroke-width="4"/><text x="423" y="154" text-anchor="middle" font-family="Arial" font-size="14" font-weight="800" fill="#111827">AI</text>
+<text x="260" y="303" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#475467">Dashboard, risk monitor and action engine together</text>
 </svg>
