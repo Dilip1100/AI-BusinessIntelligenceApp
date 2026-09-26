@@ -1,28 +1,116 @@
-# Premium SaaS Business Intelligence Website
+# Enterprise AI BI Website
 
-## Highlights
-- SaaS-style landing page
-- GitHub Pages ready
-- Responsive design
-- Dashboard showcase
-- Lead capture form
-- Mailto fallback
-- Easy Formspree/EmailJS integration
+Production-ready static website for the AI Business Intelligence consulting/demo portfolio.
 
-## GitHub Pages
-1. Create repository
-2. Upload files
-3. Settings -> Pages
-4. Deploy from Branch -> main -> root
+## New in this version
 
-## Production Upgrade Ideas
-- React + Vite
-- Framer Motion animations
-- SEO metadata
-- Blog
-- Case studies
-- CRM integration
+- “Why choose this AI BI framework” section
+- Visual SVG illustration for every positioning point
+- Business / Steel Intelligence demo
+- Real Estate Revenue Intelligence demo
+- Medical Analytics demo
+- Automotive Retail Analytics demo
+- AI Copilot and Forecasting showcase
+- Qwen 3 32B and GPT OSS model positioning
+- Client-to-client and industry-to-industry customisation messaging
+
+## Required Files
+
+Upload these files to the repository root:
+
+```text
+index.html
+styles.css
+script.js
+README.md
+assets/
+```
+
+## Required Assets
+
+Business screenshots:
+
+```text
+Financial-Analysis-Feature.jpg
+Cash-Flow_Analysis-Feature.jpg
+GST-Feature.jpg
+GST-B-Feature.jpg
+AI-Summary & Copilot - Feature.jpg
+AI-Conversational-Analytics-Feature.jpg
+AI-Forecasting-Feature.jpg
+```
+
+Demo screenshots:
+
+```text
+medical-demo-screenshot.png
+automotive-retail-demo-screenshot.png
+```
+
+AI icons:
+
+```text
+qwen-icon.svg
+qwen-reasoning-icon.svg
+gpt-oss-icon.svg
+```
+
+Framework illustrations:
+
+```text
+framework-operating-system.svg
+framework-tailored-solution.svg
+framework-platform.svg
+framework-erp-layer.svg
+framework-ownership.svg
+framework-custom.svg
+framework-meaning.svg
+framework-intelligent-erp.svg
+framework-plain-english.svg
+framework-management.svg
+```
+
+## Live Demo Links
+
+- Business / Steel Demo: https://steel-industry-dashboard.pages.dev/
+- Real Estate Demo: https://real-estate-dashboard-7ji.pages.dev/
+- Medical Demo: https://medical-demo-bv3.pages.dev/
+- Automotive Retail Demo: https://automotive-retail-dashboard.pages.dev/
+
+## GitHub Pages Deployment
+
+1. Upload all files to the `website` branch.
+2. Go to GitHub repository settings.
+3. Open Pages.
+4. Select:
+   - Source: Deploy from a branch
+   - Branch: website
+   - Folder: /root
+5. Save.
+
+## Enquiry Form
+
+The form uses a mailto fallback to:
+
+```text
+dilip1100@gmail.com
+```
+
+To use Formspree, open `script.js` and set:
+
+```js
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/yourFormId";
+```
 
 
-## AI model branding
-This generic framework references OpenAI GPT-6 Luna for AI-assisted analytics. OpenAI and GPT are trademarks of OpenAI; this project is independent and does not imply OpenAI endorsement or sponsorship.
+## Real Estate Demo Assets
+
+```text
+real-estate-dashboard-overview.jpg
+real-estate-dashboard-forecast.jpg
+real-estate-dashboard-ai-analyst.jpg
+```
+
+## Real Estate Demo Summary
+
+Adds a Cloudflare-hosted Real Estate Revenue Intelligence demo covering project inventory, buyer leads, payment plans, sales funnel, collections, overdue risk, handover readiness, six-month forecast planning and Qwen 3 32B-powered aggregate AI analysis.
