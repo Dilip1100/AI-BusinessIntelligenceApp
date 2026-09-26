@@ -22,3 +22,7 @@
 - Blog
 - Case studies
 - CRM integration
+
+
+## AI model branding
+This generic framework references OpenAI GPT-6 Luna for AI-assisted analytics. OpenAI and GPT are trademarks of OpenAI; this project is independent and does not imply OpenAI endorsement or sponsorship.

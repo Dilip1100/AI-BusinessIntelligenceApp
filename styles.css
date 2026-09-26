@@ -15,3 +15,24 @@ form{display:grid;gap:12px;max-width:700px}
 input,textarea{padding:14px;border:1px solid #dbe1e8;border-radius:10px}
 footer{text-align:center;background:white}
 @media(max-width:900px){.hero-grid{grid-template-columns:1fr}nav{flex-direction:column;gap:10px}}
+
+/* Generic framework visual — replaces demo application screenshots while retaining the site's UI language */
+.framework-panel{background:white;padding:30px;border-radius:18px;box-shadow:0 15px 35px rgba(0,0,0,.08)}
+.framework-label{font-size:12px;font-weight:700;letter-spacing:.08em;color:#64748b}
+.framework-panel h2{margin:12px 0 22px}
+.framework-flow{display:grid;gap:12px}
+.framework-flow div{padding:16px;border:1px solid #e2e8f0;border-radius:12px;background:#f8fafc}
+.framework-flow strong{display:block;margin-bottom:5px}
+.framework-flow span{font-size:14px;color:#64748b}
+.section-intro{max-width:800px;margin-bottom:28px}
+.framework-cards .card{line-height:1.6}
+nav a{margin-left:18px;text-decoration:none;color:#1e293b}
+.nav-btn{font-weight:600}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+textarea{min-height:120px;resize:vertical}
+@media(max-width:900px){nav div:last-child{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}nav a{margin-left:0}}
+
+/* OpenAI GPT-6 Luna attribution marker; preserves the original visual system */
+.openai-marker{display:inline-block;margin-left:10px;padding:5px 9px;border:1px solid #dbe1e8;border-radius:999px;font-size:11px;font-weight:600;color:#475569;vertical-align:middle;white-space:nowrap}
+.brand-note{max-width:760px;margin:18px auto 0;font-size:12px;line-height:1.5;color:#64748b}
+@media(max-width:900px){.openai-marker{display:block;margin:8px 0 0}}
