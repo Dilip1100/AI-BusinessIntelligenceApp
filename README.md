@@ -72,12 +72,16 @@ framework-management.svg
 
 ## Live Demo Links
 
-- Business / Steel Demo: https://steel-industry-dashboard.pages.dev/
-- Real Estate Demo: https://real-estate-dashboard-7ji.pages.dev/
-- Medical Demo: https://medical-demo-bv3.pages.dev/
-- Automotive Retail Demo: https://automotive-retail-dashboard.pages.dev/
+- Business / Steel Demo: https://d2ms0uuvtltgjl.cloudfront.net/
+- Real Estate Demo: https://d2isowwetwjwte.cloudfront.net/
+- Medical Demo: https://d1phv88yjex4ar.cloudfront.net/
+- Automotive Retail Demo: https://d373yfw2mwiyge.cloudfront.net/
 
-## GitHub Pages Deployment
+## AWS Demo Hosting
+
+The four demo applications run on Amazon EC2 behind Amazon CloudFront. The links above are the enabled CloudFront distributions verified in the AWS console. The portfolio website is maintained separately in this repository.
+
+## Portfolio Website Deployment (GitHub Pages)
 
 1. Upload all files to the `website` branch.
 2. Go to GitHub repository settings.
@@ -113,4 +117,5 @@ real-estate-dashboard-ai-analyst.jpg
 
 ## Real Estate Demo Summary
 
-Adds a Cloudflare-hosted Real Estate Revenue Intelligence demo covering project inventory, buyer leads, payment plans, sales funnel, collections, overdue risk, handover readiness, six-month forecast planning and Qwen 3 32B-powered aggregate AI analysis.
+Adds a AWS-hosted Real Estate Revenue Intelligence demo covering project inventory, buyer leads, payment plans, sales funnel, collections, overdue risk, handover readiness, six-month forecast planning and Qwen 3 32B-powered aggregate AI analysis.
+
