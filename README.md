@@ -11,7 +11,7 @@ Production-ready static website for the AI Business Intelligence consulting/demo
 - Medical Analytics demo
 - Automotive Retail Analytics demo
 - AI Copilot and Forecasting showcase
-- Qwen 3 32B and GPT OSS model positioning
+- GPT-6 Luna AI business adviser and Amazon S3 data storage
 - Client-to-client and industry-to-industry customisation messaging
 
 ## Required Files
@@ -47,13 +47,9 @@ medical-demo-screenshot.png
 automotive-retail-demo-screenshot.png
 ```
 
-AI icons:
+Branding:
 
-```text
-qwen-icon.svg
-qwen-reasoning-icon.svg
-gpt-oss-icon.svg
-```
+The website displays the official Powered by AWS logo from https://d0.awsstatic.com/logos/powered-by-aws.png and links to AWS. AI and data integration cards describe GPT-6 Luna and Amazon S3.
 
 Framework illustrations:
 
@@ -117,5 +113,14 @@ real-estate-dashboard-ai-analyst.jpg
 
 ## Real Estate Demo Summary
 
-Adds a AWS-hosted Real Estate Revenue Intelligence demo covering project inventory, buyer leads, payment plans, sales funnel, collections, overdue risk, handover readiness, six-month forecast planning and Qwen 3 32B-powered aggregate AI analysis.
+Adds an AWS-hosted Real Estate Revenue Intelligence demo covering project inventory, buyer leads, payment plans, sales funnel, collections, overdue risk, handover readiness, six-month forecast planning and GPT-6 Luna-powered aggregate AI analysis.
+
+
+## Current AI and Data Stack
+
+- AI adviser: GPT-6 Luna
+- Source data storage: Amazon S3
+- Demo delivery: Amazon CloudFront and Amazon EC2
+- Sign-in: Amazon Cognito
+- Website branding: Powered by AWS with the official AWS logo
 
